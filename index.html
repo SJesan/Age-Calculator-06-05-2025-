@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="text-white">
+
+  <section class="bg-[url('/bg-image.jpg')] bg-cover bg-center h-screen flex flex-col justify-center items-center px-4">
+    <div class="bg-white/10 backdrop-brightness-90 backdrop-blur-md p-10 rounded-2xl shadow-xl w-full max-w-2xl text-center">
+      
+      <header class="font-tagesschrift text-7xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-slate-800 to-[#00008B] mb-6 p-3 ">
+        Age Calculator
+      </header>
+
+      <p class="text-2xl md:text-3xl text-black font-bold mb-4 tracking-wide">
+        Today Date <span class="text-[#00008B]  font-bold" id="today"></span>
+      </p>
+
+      <p class="text-xl md:text-2xl text-[#6082B6] font-medium mb-6 tracking-wide invisible">
+        Your Brith Date is : <span class="text-[#00008B] font-bold" id="sBdate"></span>
+      </p>
+      <p class="text-xl md:text-2xl text-[#6082B6] font-medium mb-6 tracking-wide invisible">
+        Your Age <span class="text-[#00008B] font-semibold" id="sAge"></span>
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center gap-4 justify-center">
+        <input type="date" id="input"
+  class="appearance-none w-full sm:w-auto px-5 py-3 rounded-md text-black bg-white border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600 hover:bg-blue-50 transition duration-200"/>
+
+        
+        <button id="btn"
+          class="bg-[#000080] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition duration-300">
+          Calculate
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
